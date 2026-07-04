@@ -1,0 +1,17 @@
+### Local - Get all contacts
+GET http://localhost:3000/contacts
+
+###
+
+### Local - Get one contact
+GET http://localhost:3000/contacts/6a487a1397c627dc1143d70e
+
+###
+
+### Render - Get all contacts
+GET https://cse341-jjoh.onrender.com/contacts
+
+###
+
+### Render - Get one contact
+GET https://cse341-jjoh.onrender.com/contacts/6a487a2497c627dc1143d710
