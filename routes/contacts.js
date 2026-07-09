@@ -3,6 +3,15 @@ import * as contactsController from "../controllers/contactsController.js";
 
 const router = express.Router();
 
+/**
+ * @swagger
+ * /contacts:
+ *   get:
+ *     summary: Get all contacts
+ *     responses:
+ *       200:
+ *         description: Returns all contacts
+ */
 router.get("/", contactsController.getAll);
 router.get("/:id", contactsController.getOne);
 router.post("/", contactsController.create);
