@@ -14,11 +14,11 @@ app.use(express.json());
 app.use("/contacts", contactsRoutes);
 
 app.get("/", (req, res) => {
-    res.send("API Contacts running");
+  res.send("API Contacts running");
 });
 
 connectDB().then(() => {
-    app.listen(PORT, () => {
-        console.log(`Server running on port ${PORT}`);
-    });
+  app.listen(PORT, () => {
+    console.log(`Server running on port ${PORT}`);
+  });
 });

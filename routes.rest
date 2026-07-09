@@ -4,7 +4,40 @@ GET http://localhost:3000/contacts
 ###
 
 ### Local - Get one contact
-GET http://localhost:3000/contacts/6a487a1397c627dc1143d70e
+GET http://localhost:3000/contacts/6a4fc963b1186c9ee0562f15
+
+###
+
+### Local - Create new contact
+POST http://localhost:3000/contacts
+Content-Type: application/json
+
+{
+  "firstName": "Xavier",
+  "lastName": "Apolinario",
+  "email": "xavi.apolinario@gmail.com",
+  "favoriteColor": "green",
+  "birthday": "1993-01-01"
+}
+
+###
+
+### Local - Update contact
+PUT http://localhost:3000/contacts/6a4fc860286f43389b94b8d5
+Content-Type: application/json
+
+{
+  "firstName": "Arturo Updated",
+  "lastName": "Romero",
+  "email": "arturo.updated@gmail.com",
+  "favoriteColor": "Green",
+  "birthday": "1990-01-01"
+}
+
+###
+
+### Local - Delete contact
+DELETE http://localhost:3000/contacts/6a4fc963b1186c9ee0562f15
 
 ###
 
@@ -15,3 +48,36 @@ GET https://cse341-jjoh.onrender.com/contacts
 
 ### Render - Get one contact
 GET https://cse341-jjoh.onrender.com/contacts/6a487a2497c627dc1143d710
+
+###
+
+### Render - Create new contact
+POST https://cse341-jjoh.onrender.com/contacts
+Content-Type: application/json
+
+{
+  "firstName": "Test",
+  "lastName": "Render",
+  "email": "test.render@gmail.com",
+  "favoriteColor": "Red",
+  "birthday": "1995-05-15"
+}
+
+###
+
+### Render - Update contact
+PUT https://cse341-jjoh.onrender.com/contacts/ID_DEL_CONTACTO
+Content-Type: application/json
+
+{
+  "firstName": "Updated",
+  "lastName": "Contact",
+  "email": "updated@gmail.com",
+  "favoriteColor": "Yellow",
+  "birthday": "1995-05-15"
+}
+
+###
+
+### Render - Delete contact
+DELETE https://cse341-jjoh.onrender.com/contacts/ID_DEL_CONTACTO
