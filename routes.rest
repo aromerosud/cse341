@@ -47,7 +47,7 @@ GET https://cse341-jjoh.onrender.com/contacts
 ###
 
 ### Render - Get one contact
-GET https://cse341-jjoh.onrender.com/contacts/6a487a2497c627dc1143d710
+GET https://cse341-jjoh.onrender.com/contacts/6a487a1397c627dc1143d70e
 
 ###
 
@@ -56,9 +56,9 @@ POST https://cse341-jjoh.onrender.com/contacts
 Content-Type: application/json
 
 {
-  "firstName": "Test",
-  "lastName": "Render",
-  "email": "test.render@gmail.com",
+  "firstName": "Dunia",
+  "lastName": "Romero",
+  "email": "dunia.romero@gmail.com",
   "favoriteColor": "Red",
   "birthday": "1995-05-15"
 }
@@ -66,13 +66,13 @@ Content-Type: application/json
 ###
 
 ### Render - Update contact
-PUT https://cse341-jjoh.onrender.com/contacts/ID_DEL_CONTACTO
+PUT https://cse341-jjoh.onrender.com/contacts/6a4fcbf291f80ef511eaaf04
 Content-Type: application/json
 
 {
-  "firstName": "Updated",
-  "lastName": "Contact",
-  "email": "updated@gmail.com",
+  "firstName": "Dunia",
+  "lastName": "Romero Rodriguez",
+  "email": "duniarr@gmail.com",
   "favoriteColor": "Yellow",
   "birthday": "1995-05-15"
 }
@@ -80,4 +80,4 @@ Content-Type: application/json
 ###
 
 ### Render - Delete contact
-DELETE https://cse341-jjoh.onrender.com/contacts/ID_DEL_CONTACTO
+DELETE https://cse341-jjoh.onrender.com/contacts/6a4fca7db1186c9ee0562f18
